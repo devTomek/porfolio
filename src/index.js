@@ -7,10 +7,10 @@ import configureStore from "./store";
 import App from "./components/app/App";
 
 ReactDOM.render(
-<Provider store={configureStore()}>
-  <App/>
+  <Provider store={configureStore()}>
+    <App/>
   </Provider>,
-document.getElementById('root')
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

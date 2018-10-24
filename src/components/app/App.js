@@ -6,11 +6,11 @@ import SectionThree from "../homePage/sectionThree/SectionThree";
 class App extends Component {
   render() {
     return (
-      <div>
+      <React.StrictMode>
         <SectionOne/>
         <SectionTwo/>
         <SectionThree/>
-      </div>
+      </React.StrictMode>
     )
   }
 }
