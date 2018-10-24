@@ -1,0 +1,12 @@
+.section-two {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    color: #0f0f0f;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
