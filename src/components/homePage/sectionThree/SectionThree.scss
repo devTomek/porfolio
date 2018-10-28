@@ -1,3 +1,23 @@
 .section-three {
+  color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+  video {
+    width: 100%;
+  }
+  .text-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
 }
