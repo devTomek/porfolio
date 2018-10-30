@@ -1,3 +1,23 @@
 .section-four {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  .content-wrapper {
+    height: 100vh;
+    display: flex;
+    width: 80%;
+    .column-wrapper {
+      width: 50%;
+      .html-wrapper, .css-wrapper, .sass-wrapper {
+        display: flex;
+      }
+    }
+  }
+  p {
+    outline: 1px solid red;
+    margin: 10rem 0;
+    font-size: 2rem;
+  }
+  img {
+    width: 256px;
+  }
 }
