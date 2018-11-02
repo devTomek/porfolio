@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.scss';
 import SectionTwo from "../homePage/sectionTwo/SectionTwo";
 import SectionThree from "../homePage/sectionThree/SectionThree";
 import SectionOne from "../homePage/sectionOne/SectionOne";

@@ -1,3 +1,5 @@
+@import '../../../variables';
+
 .section-four {
   display: flex;
   justify-content: center;
@@ -7,17 +9,28 @@
     width: 80%;
     .column-wrapper {
       width: 50%;
-      .html-wrapper, .css-wrapper, .sass-wrapper {
+      display: flex;
+      flex-direction: column;
+      .technology-wrapper {
         display: flex;
+        align-items: center;
+        height: 100%;
+        p {
+          font-size: 2rem;
+          color: $text-color-light;
+        }
+        .image, img {
+          width: 256px;
+          height: 256px;
+        }
       }
     }
-  }
-  p {
-    outline: 1px solid red;
-    margin: 10rem 0;
-    font-size: 2rem;
-  }
-  img {
-    width: 256px;
+    .column-two {
+      padding-left: 1rem;
+      p {
+        text-align: end;
+        padding-right: 1rem;
+      }
+    }
   }
 }
