@@ -3,6 +3,7 @@
 .technology-layer {
   display: flex;
   justify-content: center;
+  padding: 5rem 0;
   .content-wrapper {
     height: 100vh;
     display: flex;
@@ -20,8 +21,8 @@
           color: $text-color-light-dark;
         }
         .image, img {
-          width: 256px;
-          height: 256px;
+          width: 220px;
+          height: 220px;
         }
       }
     }
