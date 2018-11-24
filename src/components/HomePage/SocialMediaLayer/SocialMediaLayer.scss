@@ -1,0 +1,37 @@
+@import '../../../variables';
+
+.social-media-layer {
+  height: 110vh;
+  position: relative;
+  overflow: hidden;
+  .video {
+    position: absolute;
+    width: 100vw;
+  }
+  .content-wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100vw;
+    color: $background-color;
+    .header {
+      font-size: 7rem;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    .content {
+      display: flex;
+      .column {
+        outline: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    }
+  }
+}
+
+//todo
