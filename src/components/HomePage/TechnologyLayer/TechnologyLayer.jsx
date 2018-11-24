@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SectionFour.scss";
+import "./TechnologyLayer.scss";
 import html from '../../../assets/html5.svg'
 import css from '../../../assets/css3.svg'
 import sass from '../../../assets/sass.svg'
@@ -7,8 +7,8 @@ import js from '../../../assets/js.svg'
 import react from '../../../assets/react.svg'
 import reduxIcon from '../../../assets/redux.svg'
 
-const SectionFour = () =>
-  <div className="section-four">
+const TechnologyLayer = () =>
+  <div className="technology-layer">
     <div className="content-wrapper">
       <div className="column-wrapper">
         <div className="technology-wrapper">
@@ -53,4 +53,4 @@ const SectionFour = () =>
     </div>
   </div>;
 
-export default SectionFour;
+export default TechnologyLayer;

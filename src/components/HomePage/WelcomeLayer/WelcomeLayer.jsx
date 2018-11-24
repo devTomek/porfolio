@@ -1,8 +1,8 @@
 import React from 'react';
-import './SectionOne.scss';
+import './WelcomeLayer.scss';
 
-const SectionOne = () =>
-  <div className="section-one">
+const WelcomeLayer = () =>
+  <div className="welcome-layer">
     <div className="content-wrapper">
       <div className="technologies">
         <div className="flex-row first-row">
@@ -23,4 +23,4 @@ const SectionOne = () =>
     </div>
   </div>;
 
-export default SectionOne;
+export default WelcomeLayer;

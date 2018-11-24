@@ -1,12 +1,12 @@
 @import '../../../variables';
 
-.section-two {
+.transition-layer {
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   p {
-    color: $background-color;
+    color: $text-color-light-dark;
     font-size: 3rem;
     text-align: center;
   }

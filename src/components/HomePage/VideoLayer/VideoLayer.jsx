@@ -1,10 +1,10 @@
 import React from 'react';
-import "./SectionThree.scss";
+import "./VideoLayer.scss";
 import manTyping from "../../../assets/manTyping.mp4";
 import manTypingFrame from "../../../assets/manTypingFrame.PNG"
 
-const SectionThree = () =>
-  <div className="section-three">
+const VideoLayer = () =>
+  <div className="video-layer">
     <video poster={manTypingFrame} autoPlay muted loop width="100%">
       <source src={manTyping}/>
       Your browser does not support the video tag.
@@ -15,4 +15,4 @@ const SectionThree = () =>
     </div>
   </div>;
 
-export default SectionThree;
+export default VideoLayer;
