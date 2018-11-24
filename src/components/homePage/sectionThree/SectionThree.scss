@@ -1,5 +1,7 @@
+@import '../../../variables';
+
 .section-three {
-  color: #fdfdfd;
+  color: $background-color;
   display: flex;
   align-items: center;
   justify-content: center;

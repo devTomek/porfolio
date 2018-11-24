@@ -1,3 +1,5 @@
+@import '../../../variables';
+
 .section-one {
   background: url("../../../assets/sectionOneBackground.jpg") no-repeat fixed center;
   background-size: cover;
@@ -8,7 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fdfdfd;
+    color: $background-color;
     .technologies {
       width: 80%;
       height: 23rem;

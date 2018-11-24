@@ -1,10 +1,12 @@
+@import '../../../variables';
+
 .section-two {
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   p {
-    color: #0f0f0f;
+    color: $background-color;
     font-size: 3rem;
     text-align: center;
   }
