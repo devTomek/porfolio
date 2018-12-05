@@ -15,7 +15,7 @@
     width: 100vw;
     color: $background-color;
     .header {
-      font-size: 7rem;
+      font-size: 6rem;
       text-align: center;
       margin-top: 5rem;
     }
@@ -29,9 +29,17 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        position: relative;
+        bottom: 5rem;
+      }
+      .left-side {
+        img, p {
+          padding: 1rem 0;
+        }
+        p {
+          font-size: 4rem;
+        }
       }
     }
   }
 }
-
-//todo

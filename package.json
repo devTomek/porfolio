@@ -5,6 +5,8 @@
   "homepage": "https://devtomek.github.io/porfolio",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
