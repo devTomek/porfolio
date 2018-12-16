@@ -1,4 +1,4 @@
-@import '../../../variables';
+@import "../../../variables";
 
 .social-media-layer {
   height: 110vh;
@@ -22,7 +22,6 @@
     .content {
       display: flex;
       .column {
-        outline: 1px solid red;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -31,13 +30,36 @@
         height: 100vh;
         position: relative;
         bottom: 5rem;
+        padding: 0 5rem;
+        .social-element {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          padding: 1rem 0;
+          .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin-right: 2rem;
+          }
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: $background-color;
+          }
+          a:hover {
+            text-decoration: underline !important;
+          }
+        }
       }
       .left-side {
-        img, p {
-          padding: 1rem 0;
+        p {
+          margin-top: 2rem;
         }
         p {
           font-size: 4rem;
+        }
+        img {
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
         }
       }
     }
