@@ -9,11 +9,12 @@ class ContactFormLayerContainer extends Component {
 			input: "I can reply on your email...",
 		}
 		this.sendMessageText = "Send";
+		this.headerText = "Send me a message";
 	}
 
 	render() {
 		return (
-			<ContactFormLayer placeholder={this.placeholder} sendMessageText={this.sendMessageText} />
+			<ContactFormLayer placeholder={this.placeholder} sendMessageText={this.sendMessageText} headerText={this.headerText} />
 		);
 	}
 }
