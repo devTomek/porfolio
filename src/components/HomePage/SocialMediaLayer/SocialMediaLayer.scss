@@ -13,7 +13,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     height: 100%;
     width: 100vw;
-    color: $background-color;
+    color: $light;
     .header {
       font-size: 4rem;
       text-align: center;
@@ -43,7 +43,7 @@
           a {
             font-size: 2rem;
             text-decoration: none;
-            color: $background-color;
+            color: $light;
           }
           a:hover {
             text-decoration: underline !important;

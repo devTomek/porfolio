@@ -6,18 +6,20 @@ import WelcomeLayer from "../HomePage/WelcomeLayer/WelcomeLayer";
 import TechnologyLayer from "../HomePage/TechnologyLayer/TechnologyLayer";
 import SocialMediaLayer from "../HomePage/SocialMediaLayer/SocialMediaLayer";
 import ContactFormLayerContainer from '../HomePage/ContactFormLayer/ContactFormLayerContainer';
+import HeaderContainer from '../Navbar/HeaderContainer';
 
 class App extends Component {
   render() {
     return (
-      <React.StrictMode>
+      <div>
+        <HeaderContainer />
         <WelcomeLayer />
         <TransitionLayer />
         <VideoLayer />
         <TechnologyLayer />
         <SocialMediaLayer />
         <ContactFormLayerContainer />
-      </React.StrictMode>
+      </div>
     )
   }
 }
