@@ -2,7 +2,7 @@ import './SocialMediaLayer.scss';
 import React from 'react';
 import manTyping2 from '../../../assets/manTyping2.mp4';
 import manTyping2Frame from '../../../assets/manTyping2Frame.PNG';
-import avatar from '../../../assets/contact-avatar.jpg';
+import avatar from '../../../assets/avatar.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -28,7 +28,9 @@ const SocialMediaLayer = () =>
       <div className="header">Contact</div>
       <div className="content">
         <div className="column left-side">
-          <img src={avatar} alt='avatar' width='370px' />
+          <div className="avatar-wrapper">
+            <img src={avatar} alt='avatar' width='370px' />
+          </div>
           <p className='name'>Tomasz Chybziński</p>
         </div>
         <div className="column right-side">

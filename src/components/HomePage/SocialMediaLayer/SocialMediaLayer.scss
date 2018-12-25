@@ -15,7 +15,7 @@
     width: 100vw;
     color: $background-color;
     .header {
-      font-size: 6rem;
+      font-size: 4rem;
       text-align: center;
       margin-top: 5rem;
     }
@@ -30,7 +30,6 @@
         height: 100vh;
         position: relative;
         bottom: 5rem;
-        padding: 0 5rem;
         .social-element {
           display: flex;
           width: 100%;
@@ -52,15 +51,20 @@
         }
       }
       .left-side {
+        display: flex;
+        align-items: flex-end;
         p {
           margin-top: 2rem;
         }
         p {
-          font-size: 4rem;
+          font-size: 3rem;
         }
         img {
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
         }
+      }
+      .right-side {
+        transform: translate(10rem);
       }
     }
   }
