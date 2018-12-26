@@ -1,16 +1,19 @@
 import React from 'react';
 import './WelcomeLayer.scss';
 
-const WelcomeLayer = () =>
+const WelcomeLayer = ({ text, dynamicText }) =>
   <div className="welcome-layer">
     <div className="text-wrapper">
       <span className="author">
-        <p>Tomasz Chybziński</p>
+        <p>{text.author}</p>
       </span>
-      <p>Hello!</p>
-      <p>I am a JavaScript Developer</p>
-      <p>I create <span className="changing-word-wrapper">Websites</span></p>
+      <p>{text.hello}</p>
+      <p>{text.JSDev}</p>
+      <div className="last-line">
+        <p>{text.create}</p>
+        <div className="dynamic-text">{dynamicText}</div>
+      </div>
     </div>
-  </div >;
+  </div>;
 
 export default WelcomeLayer;
