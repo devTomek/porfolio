@@ -5,8 +5,8 @@ import VideoLayer from "../HomePage/VideoLayer/VideoLayer";
 import TechnologyLayer from "../HomePage/TechnologyLayer/TechnologyLayer";
 import SocialMediaLayer from "../HomePage/SocialMediaLayer/SocialMediaLayer";
 import ContactFormLayerContainer from '../HomePage/ContactFormLayer/ContactFormLayerContainer';
-import HeaderContainer from '../Navbar/HeaderContainer';
 import WelcomeLayerContainer from '../HomePage/WelcomeLayer/WelcomeLayerContainer';
+import HeaderContainer from '../Header/HeaderContainer';
 
 class App extends Component {
   render() {
