@@ -17,7 +17,10 @@
         display: flex;
         align-items: center;
         height: 100%;
+        padding: 0 1rem;
         p {
+          text-align: justify;
+          text-justify: inter-word;
           font-size: 1.5rem;
           color: $dark;
         }
@@ -31,8 +34,117 @@
     .column-two {
       padding-left: 1rem;
       p {
+        text-align: justify;
+        text-justify: inter-word;
         text-align: end;
         padding-right: 1rem;
+      }
+    }
+  }
+}
+
+.technnology-layer,
+.technology-wrapper,
+.content-wrapper,
+.column-wrapper,
+p,
+.column-two,
+.image,
+img {
+  transition: all 0.3s;
+}
+
+@media (max-width: 1700px) {
+  .technology-layer {
+    .content-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .technology-layer {
+    height: 100%;
+    display: block;
+    padding: 0;
+    .content-wrapper {
+      flex-direction: column;
+      .column-wrapper {
+        display: block;
+        box-sizing: initial;
+        width: 100%;
+        .technology-wrapper {
+          flex-direction: column;
+          padding: 2rem 0;
+          p {
+            text-align: center;
+            width: 50%;
+          }
+        }
+        .html {
+          background-color: $light;
+        }
+        .css {
+          padding-top: 1rem;
+          background-color: $dark;
+          p {
+            color: $light;
+          }
+        }
+        .sass {
+          background-color: $light;
+        }
+        .js {
+          background-color: $dark;
+          p {
+            color: $light;
+          }
+        }
+        .react {
+          background-color: $light;
+        }
+        .redux {
+          background-color: $dark;
+          p {
+            color: $light;
+          }
+        }
+      }
+      .column-two {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .technology-layer {
+    .content-wrapper {
+      .column-wrapper {
+        .technology-wrapper {
+          .image,
+          img {
+            width: 150px;
+            height: 150px;
+          }
+          p {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .technology-layer {
+    .content-wrapper {
+      .column-wrapper {
+        .technology-wrapper {
+          p {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

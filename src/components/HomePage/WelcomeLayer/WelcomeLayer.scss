@@ -1,6 +1,7 @@
 @import "../../../variables";
 
 .welcome-layer {
+  transition: all 0.3s;
   background: url("../../../assets/sectionOneBackground.jpg") no-repeat fixed
     center;
   background-size: cover;
@@ -13,10 +14,9 @@
   letter-spacing: 0.2rem;
   .text-wrapper {
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.2);
     line-height: normal;
     p {
+      transition: all 0.3s;
       margin-bottom: 0.5rem;
       margin-left: 20%;
     }
@@ -36,7 +36,29 @@
       transition: opacity 0.3s;
     }
     .last-line {
-        display: flex;
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-layer {
+    background: url("../../../assets/sectionOneBackgroundMobile.jpg") no-repeat
+      fixed center;
+    .text-wrapper {
+      text-align: center;
+      p {
+        margin-left: 10%;
+        text-align-last: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .welcome-layer {
+    .text-wrapper {
+      font-size: 2rem;
     }
   }
 }
