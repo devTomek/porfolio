@@ -46,19 +46,22 @@
     background: url("../../../assets/sectionOneBackgroundMobile.jpg") no-repeat
       fixed center;
     .text-wrapper {
-      text-align: center;
       p {
-        margin-left: 10%;
-        text-align-last: left;
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
       }
-    }
-  }
-}
-
-@media (max-width: 860px) {
-  .welcome-layer {
-    .text-wrapper {
-      font-size: 2rem;
+      .last-line {
+        justify-content: center;
+        .dynamic-text {
+          font-size: 2rem;
+        }
+      }
+      .author {
+        p {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
