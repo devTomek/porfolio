@@ -8,7 +8,7 @@
     color: $light !important;
   }
   nav {
-    padding: 10px 200px;
+    padding: 1rem 5rem;
     transition: padding 0.3s;
   }
 }
@@ -21,12 +21,4 @@
   z-index: $index-navbar;
   background-color: $dark;
   transition: top 0.3s;
-}
-
-@media (max-width: 992px) {
-  .header-wrapper {
-    nav {
-      padding: 10px 100px;
-    }
-  }
 }
