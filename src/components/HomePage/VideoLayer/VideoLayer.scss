@@ -1,25 +1,65 @@
-@import '../../../variables';
+@import "../../../variables";
 
 .video-layer {
-  height: 110vh;
+  width: 100%;
   position: relative;
-  overflow: hidden;
-  .video {
+  .text-wrapper {
     position: absolute;
     width: 100%;
-  }
-  .content-wrapper {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    height: 100%;
-    width: 100vw;
+    height: 99%;
+    top: 0;
+    left: 0;
+    color: $light;
+    text-align: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    p {
-      color: $light;
-      font-size: 3rem;
-      text-align: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    .html {
+      color: $lime;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .video-layer {
+    .text-wrapper {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .video-layer {
+    .text-wrapper {
+      height: 98.5%;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .video-layer {
+    .text-wrapper {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .video-layer {
+    .text-wrapper {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .video-layer {
+    .text-wrapper {
+      height: 97%;
+      font-size: 0.75rem;
     }
   }
 }
