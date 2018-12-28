@@ -13,9 +13,9 @@ class WelcomeLayerContainer extends Component {
       author: 'Tomasz Chybziński',
       hello: 'Hello!',
       JSDev: 'I am a JavaScript Developer',
-      create: "I create"
+      create: "I do"
     };
-    this.dynamicText = ['Websites', 'Web Apps', 'Node ...learning'];
+    this.dynamicText = ['Websites', 'Web Apps', 'Node', 'React', 'Redux'];
   }
 
   componentDidMount() {
