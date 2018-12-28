@@ -1,13 +1,39 @@
-@import '../../../variables';
+@import "../../../variables";
 
 .transition-layer {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   p {
     color: $dark;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+  }
+  .react {
+    color: $lime;
+  }
+}
+
+.transition-layer,
+p {
+  transition: all 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .transition-layer {
+    height: 25vh;
+    p {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .transition-layer {
+    height: 15vh;
+    p {
+      font-size: 2rem;
+    }
   }
 }
