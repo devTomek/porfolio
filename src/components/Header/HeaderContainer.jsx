@@ -1,34 +1,35 @@
-import React, { Component } from 'react';
-import Header from './Header';
+import React, { Component } from "react";
+import Header from "./Header";
 
 class HeaderContainer extends Component {
   constructor() {
     super();
     this.state = {
       isOpen: false
-    }
+    };
     this.text = {
       brand: "TC",
       home: "Home",
       about: "About",
       projects: "Projects",
       contact: "Contact"
-    }
+    };
     this.prevScroll = 0;
     this.scrolling = false;
   }
 
   componentDidMount() {
-    document.addEventListener('scroll', this.handleScroll)
+    document.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.handleScroll)
+    document.removeEventListener("scroll", this.handleScroll);
   }
 
-  toggle = () => this.setState({
-    isOpen: !this.state.isOpen
-  })
+  toggle = () =>
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
 
   handleScroll = () => {
     if (!this.scrolling) {
@@ -39,14 +40,14 @@ class HeaderContainer extends Component {
 
       this.scrolling = true;
     }
-  }
+  };
 
   toggleNavbar = () => {
     const currScroll = window.scrollY;
 
     if (this.prevScroll < currScroll) {
       if (this.headerRef) {
-        this.headerRef.style.top = '-300px';
+        this.headerRef.style.top = "-300px";
       }
     } else {
       if (this.headerRef) {
@@ -54,12 +55,16 @@ class HeaderContainer extends Component {
       }
     }
     this.prevScroll = currScroll;
-  }
+  };
 
   render() {
     return (
-      <div ref={node => this.headerRef = node} className="header-slider">
-        <Header toggle={this.toggle} isOpen={this.state.isOpen} text={this.text} />
+      <div ref={node => (this.headerRef = node)} className="header-slider">
+        <Header
+          toggle={this.toggle}
+          isOpen={this.state.isOpen}
+          text={this.text}
+        />
       </div>
     );
   }
