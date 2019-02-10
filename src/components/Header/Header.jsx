@@ -26,7 +26,6 @@ const Header = ({ toggle, isOpen, text }) => (
 					<NavItem>
 						<NavLink href="#">{text.projects}</NavLink>
 					</NavItem>
-
 					<NavItem>
 						<NavLink href="#">{text.contact}</NavLink>
 					</NavItem>
