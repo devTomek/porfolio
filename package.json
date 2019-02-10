@@ -32,7 +32,7 @@
 		"deploy": "gh-pages -d build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"test:ci": "CI=true react-scripts test",
+		"test:ci": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
