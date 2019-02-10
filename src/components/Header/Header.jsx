@@ -34,5 +34,4 @@ const Header = ({ toggle, isOpen, text }) => (
 		</Navbar>
 	</div>
 );
-
 export default Header;
