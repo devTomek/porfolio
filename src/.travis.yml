@@ -7,5 +7,9 @@ cache:
 script:
   - npm test
   - npm run build
+deploy:
+  provider: gh-pages
+  skip_cleanup: true
+  project: ./build/
 on:
   branch: master
